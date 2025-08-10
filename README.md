@@ -11,7 +11,7 @@ That gap is expected during startup because the nozzle flow hasn’t fully “se
 **Inspiration:** Based on the “Design and analysis of morphing rocket nozzle for thrust vector control” concept on GrabCAD, but **morphing/TVC was intentionally removed** for this exercise. The model here is a **fixed, 2D axisymmetric bell nozzle** sized for clarity and repeatability.  
 Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-nozzle-for-thrust-vector-control-1
 
-**Coordinate system:** Axisymmetric (x along centerline, r radial). Throat is x = 0.
+**Coordinate system:** Axisymmetric (x along centerline, r radial).
 
 ### Simplifications vs. the morphing concept
 - **2D axisymmetric**: captures startup physics (shock/expansion pattern, BL growth, plume development) at low cost.
