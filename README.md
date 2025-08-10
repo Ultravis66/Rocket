@@ -98,4 +98,5 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 > **Having trouble playing the videos on GitHub?**  
 > Watch the demo on Reddit:  
 > Videos available on request.
-[![Watch the video on Reddit](https://www.reddit.com/r/CFD/comments/1mm4p5g/transient_rocket_simulation/?new_reddit=true)
+[Watch the video on Reddit »](https://www.reddit.com/r/CFD/comments/1mm4p5g/transient_rocket_simulation/?new_reddit=true)
+
