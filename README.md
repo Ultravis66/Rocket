@@ -4,6 +4,7 @@
 That gap is expected during startup because the nozzle flow hasn’t fully “settled” to the design exit conditions.
 
 **Thrust definition**
+![Thrust Equation](ThrustEq.png)
 
 ## Geometry
 
