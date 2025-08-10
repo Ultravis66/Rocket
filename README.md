@@ -58,3 +58,6 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 <video controls muted playsinline loop style="max-width:100%;height:auto;">
   <source src="Media/Velocity.mp4" type="video/mp4">
 </video>
+
+- Videos available on request:
+https://www.reddit.com/r/CFD/comments/1mm4p5g/transient_rocket_simulation/?new_reddit=true
