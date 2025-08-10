@@ -23,9 +23,7 @@ Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-no
 
 
 ### Species breakdown (what the “Species (Air)” field shows)
-- **Inside the nozzle:** Air mass fraction ≈ 0 (combustion products dominate in the model).  
-- **Plume mixing region:** Air fraction rises from 0 → 1 with radius; a thicker mixed layer early in time = more entrainment = lower thrust.  
-- **Cold core note:** The centerline can look “cold” (e.g., ~270 K) right after the exit due to rapid expansion.
+- **Initial Condition** Air mass fraction ≈ 1 in entire domain.  
 
 ### Exhaust Species Breakdown (mass fraction) RP-1/LOX fuel
 
@@ -37,7 +35,7 @@ Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-no
 | Hydrogen          | H₂     | 0.048   | 4.8%       |
 | Oxygen            | O₂     | 0.007   | 0.7%       |
 | Nitrogen          | N₂     | 0.371   | 37.1%      |
-| **Total**         | —      | **1.000** | **100.0%** |
+| **Total**         | —      | **1.0** | **100%** |
 
 ---
 
@@ -54,10 +52,8 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 
 ---
 
-1. **Run past the ramp:** Continue until \(\dot m(t)\) and \(p_e(t)\) flatten for several ms; then time-average thrust.
-2. **Compute thrust at the exit plane:** Use area-weighted \(\dot m\), \(V_e\), and \(p_e\); subtract \(p_\infty A_e\). Avoid “net wall force only” during transients.
-3. **Smooth the signal:** Moving average over 1–5× the acoustic transit time of the nozzle to remove shock flapping.
-4. **Domain & outlet:** Ensure far-field is large and non-reflecting; \(p_\infty\) in transient matches the steady case.
+**Thrust was computed at the exit plane:** area-weighted Mdot, Velocity, and Pressure; subtract P_infinity.
+**Domain & outlet:** Ensure far-field is large and non-reflecting.
 
 **Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈1.1 MN (within modeling error). If it doesn’t, the exit is likely still over/under-expanded or the averaging window is too short.
 
