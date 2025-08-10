@@ -17,12 +17,6 @@ Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-no
 ### Simplifications vs. the morphing concept
 - **2D axisymmetric**: captures startup physics (shock/expansion pattern, BL growth, plume development) at low cost.
 
-### Mesh note
-- Throat and immediate downstream wall (BL resolution),
-- Lip and external shear layer (startup entrainment),
-- Early plume shock cell region (gradient capturing).
-
-
 ### Species breakdown (what the “Species (Air)” field shows)
 - **Initial Condition** Air mass fraction ≈ 1 in entire domain.  
 
@@ -49,6 +43,7 @@ Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-no
 
 ![Mesh](Mesh.png)
 
+Wall Y+ hits exactly 1 at the nozzle exit last cell
 Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient, ~25 inner iterations/step.
 
 ---
