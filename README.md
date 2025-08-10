@@ -55,8 +55,11 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 **Thrust was computed at the exit plane:** area-weighted Mdot, Velocity, and Pressure; subtract P_infinity.
 **Domain & outlet:** Ensure far-field is large and non-reflecting.
 
+![Species Air](SpeciesAir.png)
+
 **Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈1.1 MN (within modeling error). If it doesn’t, the exit is likely still over/under-expanded or the averaging window is too short.
 
+![Temperature](Temp.png)
 
 ### Mach
 <video controls muted playsinline loop style="max-width:100%;height:auto;">
