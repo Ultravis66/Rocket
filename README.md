@@ -10,6 +10,41 @@ F(t)=\underbrace{\dot m(t)\,V_e(t)}_{\text{momentum flux}}
 \]
 (Exit-plane values, \(p_\infty\) = ambient.)
 
+## Geometry
+
+**Inspiration:** Based on the “Design and analysis of morphing rocket nozzle for thrust vector control” concept on GrabCAD, but **morphing/TVC was intentionally removed** for this exercise. The model here is a **fixed, 2D axisymmetric bell nozzle** sized for clarity and repeatability.  
+Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-nozzle-for-thrust-vector-control-1
+
+**Coordinate system:** Axisymmetric (x along centerline, r radial). Throat is x = 0.
+
+### Key dimensions
+- Overall nozzle length: **≈ 2.5 m**
+- Chamber/inlet radius \(r_i\): **≈ 0.45 m** (diameter ≈ **0.90 m**)
+- Throat radius \(r_t\): **≈ 0.126 m** (diameter ≈ **0.252 m**)
+- Exit radius \(r_e\): **≈ 0.61 m** (diameter ≈ **1.22 m**)
+
+### Area ratios (from the radii above)
+- Contraction ratio \(A_i/A_t \approx \mathbf{12.76}\)
+- Expansion ratio \(A_e/A_t \approx \mathbf{23.44}\)
+
+### Contour/lofting
+- Smooth, single-piece bell with \(C^1\) continuity at throat and exit (no hinges, gaps, or moving segments).
+- Fillets/curvature chosen to avoid kinks that would trip separation numerically in startup.
+
+### Simplifications vs. the morphing concept
+- **No vectoring**: exit plane remains normal to the centerline at all times.
+- **No moving mesh**: fixed geometry avoids grid motion and contact interfaces.
+- **2D axisymmetric**: captures startup physics (shock/expansion pattern, BL growth, plume development) at low cost.
+
+### Mesh note
+See **Mesh.png** for topology. The grid is refined at:
+- Throat and immediate downstream wall (BL resolution),
+- Lip and external shear layer (startup entrainment),
+- Early plume shock cell region (gradient capturing).
+
+
+
+
 ---
 
 ### Species breakdown (what the “Species (Air)” field shows)
@@ -59,5 +94,9 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
   <source src="Media/Velocity.mp4" type="video/mp4">
 </video>
 
-- Videos available on request:
-https://www.reddit.com/r/CFD/comments/1mm4p5g/transient_rocket_simulation/?new_reddit=true
+> **If you are having trouble playing the videos on GitHub?**  
+> Watch the the demo on Reddit:  
+
+![Watch the video on Reddit](PressureRamp.png)](https://www.reddit.com/r/CFD/comments/1mm4p5g/transient_rocket_simulation/?new_reddit=true)
+
+> Videos available on request
