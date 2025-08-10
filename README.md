@@ -18,40 +18,32 @@ Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-no
 
 **Coordinate system:** Axisymmetric (x along centerline, r radial). Throat is x = 0.
 
-### Key dimensions
-- Overall nozzle length: **≈ 2.5 m**
-- Chamber/inlet radius \(r_i\): **≈ 0.45 m** (diameter ≈ **0.90 m**)
-- Throat radius \(r_t\): **≈ 0.126 m** (diameter ≈ **0.252 m**)
-- Exit radius \(r_e\): **≈ 0.61 m** (diameter ≈ **1.22 m**)
-
-### Area ratios (from the radii above)
-- Contraction ratio \(A_i/A_t \approx \mathbf{12.76}\)
-- Expansion ratio \(A_e/A_t \approx \mathbf{23.44}\)
-
-### Contour/lofting
-- Smooth, single-piece bell with \(C^1\) continuity at throat and exit (no hinges, gaps, or moving segments).
-- Fillets/curvature chosen to avoid kinks that would trip separation numerically in startup.
-
 ### Simplifications vs. the morphing concept
-- **No vectoring**: exit plane remains normal to the centerline at all times.
-- **No moving mesh**: fixed geometry avoids grid motion and contact interfaces.
 - **2D axisymmetric**: captures startup physics (shock/expansion pattern, BL growth, plume development) at low cost.
 
 ### Mesh note
-See **Mesh.png** for topology. The grid is refined at:
 - Throat and immediate downstream wall (BL resolution),
 - Lip and external shear layer (startup entrainment),
 - Early plume shock cell region (gradient capturing).
 
 
-
-
----
-
 ### Species breakdown (what the “Species (Air)” field shows)
 - **Inside the nozzle:** Air mass fraction ≈ 0 (combustion products dominate in the model).  
 - **Plume mixing region:** Air fraction rises from 0 → 1 with radius; a thicker mixed layer early in time = more entrainment = lower thrust.  
 - **Cold core note:** The centerline can look “cold” (e.g., ~270 K) right after the exit due to rapid expansion.
+
+### Exhaust Species Breakdown (mass fraction)
+
+| Species           | Formula | Fraction | Percentage |
+|-------------------|:------:|--------:|-----------:|
+| Water             | H₂O    | 0.291   | 29.1%      |
+| Carbon Dioxide    | CO₂    | 0.227   | 22.7%      |
+| Carbon Monoxide   | CO     | 0.056   | 5.6%       |
+| Hydrogen          | H₂     | 0.048   | 4.8%       |
+| Oxygen            | O₂     | 0.007   | 0.7%       |
+| Nitrogen          | N₂     | 0.371   | 37.1%      |
+| **Total**         | —      | **1.000** | **100.0%** |
+
 ---
 
 ### Mesh & pressure ramp
