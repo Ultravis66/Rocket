@@ -4,11 +4,12 @@
 That gap is expected during startup because the nozzle flow hasn’t fully “settled” to the design exit conditions.
 
 **Thrust definition**
-\[
-F(t)=\underbrace{\dot m(t)\,V_e(t)}_{\text{momentum flux}}
-+\underbrace{\big(p_e(t)-p_\infty\big)\,A_e}_{\text{pressure term}}
-\]
-(Exit-plane values, \(p_\infty\) = ambient.)
+$$
+F(t)=\underbrace{\dot{m}(t)\,V_e(t)}_{\text{momentum flux}}
+\;+\;\underbrace{\big(p_e(t)-p_\infty\big)\,A_e}_{\text{pressure term}}\,.
+$$
+
+*(Exit-plane values; \(p_\infty\) = ambient.)*
 
 ## Geometry
 
