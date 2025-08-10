@@ -32,7 +32,7 @@ Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-no
 - **Plume mixing region:** Air fraction rises from 0 → 1 with radius; a thicker mixed layer early in time = more entrainment = lower thrust.  
 - **Cold core note:** The centerline can look “cold” (e.g., ~270 K) right after the exit due to rapid expansion.
 
-### Exhaust Species Breakdown (mass fraction)
+### Exhaust Species Breakdown (mass fraction) RP-1/LOX fuel
 
 | Species           | Formula | Fraction | Percentage |
 |-------------------|:------:|--------:|-----------:|
