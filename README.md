@@ -44,6 +44,7 @@ Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-no
 ![Mesh](Mesh.png)
 
 Wall Y+ hits exactly 1 at the nozzle exit last cell
+K-omega SST turbulence model was used for this exersize
 Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient, ~25 inner iterations/step.
 
 ---
