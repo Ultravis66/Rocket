@@ -1,15 +1,9 @@
-## Transient Rocket Nozzle vs. Steady-State — Why 0.70 MN vs 1.10 MN
+## Transient Rocket Nozzle vs. Steady-State
 
 **The transient run plateaus around **0.70 MN** while the steady-state solution predicts **~1.10 MN**.  
 That gap is expected during startup because the nozzle flow hasn’t fully “settled” to the design exit conditions.
 
 **Thrust definition**
-$$
-F(t)=\underbrace{\dot{m}(t)\,V_e(t)}_{\text{momentum flux}}
-\;+\;\underbrace{\big(p_e(t)-p_\infty\big)\,A_e}_{\text{pressure term}}\,.
-$$
-
-*(Exit-plane values; \(p_\infty\) = ambient.)*
 
 ## Geometry
 
