@@ -2,6 +2,7 @@
 
 **The transient run plateaus around **0.70 MN** while the steady-state solution predicts **~1.10 MN**.  
 That gap is expected during startup because the nozzle flow hasn’t fully “settled” to the design exit conditions.
+Transient simulation was stopped at 0.025 seconds
 
 **Thrust definition**
 ![Thrust Equation](ThrustEq.png)
