@@ -1,23 +1,22 @@
 ## Transient Rocket Nozzle vs. Steady-State
 
-**The transient run plateaus around **0.70 MN** while the steady-state solution predicts **~1.10 MN**.  
-That gap is expected during startup because the nozzle flow hasn’t fully “settled” to the design exit conditions.
-Transient simulation was stopped at 0.025 seconds
+**The transient run plateaus around **0.70 MN** while the steady-state solution predicts up to **~1 MN**.  
+Transient simulation was stopped at 0.025 seconds run time.
 
 **Thrust definition**
 ![Thrust Equation](ThrustEq.png)
 
 ## Geometry
 
-**Inspiration:** Based on the “Design and analysis of morphing rocket nozzle for thrust vector control” concept on GrabCAD, but **morphing/TVC was intentionally removed** for this exercise. The model here is a **fixed, 2D axisymmetric bell nozzle** sized for clarity and repeatability.  
+**Inspiration:** Based on the “Design and analysis of morphing rocket nozzle for thrust vector control” concept on GrabCAD, but morphing/TVC was intentionally removed for this exercise. The model here is a fixed, 2D axisymmetric bell nozzle sized for clarity and repeatability. exit diamter: 1.24 meters  
 Reference: https://grabcad.com/library/design-and-analysis-of-morphing-rocket-nozzle-for-thrust-vector-control-1
 
 **Coordinate system:** Axisymmetric (x along centerline, r radial).
 
 ### Simplifications vs. the morphing concept
-- **2D axisymmetric**: captures startup physics (shock/expansion pattern, BL growth, plume development) at low cost.
+- **2D axisymmetric**: captures startup physics (shock/expansion pattern and plume development).
 
-### Species breakdown (what the “Species (Air)” field shows)
+### Species breakdown
 - **Initial Condition** Air mass fraction ≈ 1 in entire domain.  
 
 ### Exhaust Species Breakdown (mass fraction) RP-1/LOX fuel
@@ -54,7 +53,7 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 
 ![Species Air](SpeciesAir.png)
 
-**Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈1.1 MN (within modeling error). If it doesn’t, the exit is likely still over/under-expanded or the averaging window is too short.
+**Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈1 MN.
 
 ![Temperature](Temp.png)
 
