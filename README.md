@@ -1,6 +1,6 @@
 ## Transient Rocket Nozzle vs. Steady-State
 
-**The transient run plateaus around **0.70 MN** while the steady-state solution predicts up to **~1 MN**.  
+**The transient run plateaus around **5.7 MN** which matches the steady-state solution predicts.  
 Transient simulation was stopped at 0.025 seconds run time.
 
 **Thrust definition**
@@ -53,7 +53,7 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 
 ![Species Air](SpeciesAir.png)
 
-**Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈1 MN.
+**Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈5.7 MN.
 
 ![Temperature](Temp.png)
 
