@@ -53,7 +53,7 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 
 ![Species Air](SpeciesAir.png)
 
-**Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈5.7 MN.
+**Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈1.1 MN.
 
 ![Temperature](Temp.png)
 
