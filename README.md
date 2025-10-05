@@ -66,8 +66,5 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 [![Rocket Nozzle Temperature Contours](https://img.youtube.com/vi/1NkkQZKwbGY/hqdefault.jpg)](https://www.youtube.com/watch?v=1NkkQZKwbGY "Play on YouTube")
 
 ### Velocity
-<video controls muted playsinline loop style="max-width:100%;height:auto;">
-  <source src="Media/Velocity.mp4" type="video/mp4">
-</video>
-
+[![Rocket Nozzle Velocity Contours](https://img.youtube.com/vi/rJ3ukMYXq6c/hqdefault.jpg)](https://www.youtube.com/watch?v=rJ3ukMYXq6c "Play on YouTube")
 
