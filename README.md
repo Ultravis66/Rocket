@@ -60,10 +60,11 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 <video controls muted playsinline loop style="max-width:100%;height:auto;">
   <source src="Media/Mach.mp4" type="video/mp4">
 </video>
+
 ### Species (Air)
 [![Rocket Nozzle Species (Air) Contours](https://img.youtube.com/vi/FEAcBxugaVg/hqdefault.jpg)](https://www.youtube.com/watch?v=FEAcBxugaVg "Play on YouTube")
 
-### Temperature (0–0.025 s)
+### Temperature
 [![Rocket Nozzle Temperature Contours](https://img.youtube.com/vi/1NkkQZKwbGY/hqdefault.jpg)](https://www.youtube.com/watch?v=1NkkQZKwbGY "Play on YouTube")
 
 ### Velocity
