@@ -56,8 +56,6 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 
 **Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈1.1 MN.
 
-![Temperature](Temp.png)
-
 ### Mach
 <video controls muted playsinline loop style="max-width:100%;height:auto;">
   <source src="Media/Mach.mp4" type="video/mp4">
@@ -68,12 +66,8 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
   <source src="Media/SpeciesAir.mp4" type="video/mp4">
 </video>
 
-### Temperature
-<iframe width="560" height="315" 
-src="https://www.youtube.com/embed/1NkkQZKwbGY?rel=0&autoplay=0&loop=1&mute=1&playlist=1NkkQZKwbGY" 
-title="Rocket Nozzle Temperature Contours" frameborder="0" 
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+### Temperature (0–0.025 s)
+[![Rocket Nozzle Temperature Contours](https://img.youtube.com/vi/1NkkQZKwbGY/hqdefault.jpg)](https://www.youtube.com/watch?v=1NkkQZKwbGY "Play on YouTube")
 
 ### Velocity
 <video controls muted playsinline loop style="max-width:100%;height:auto;">
