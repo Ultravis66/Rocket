@@ -54,6 +54,8 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 
 **Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈1.1 MN.
 
+### Videos Below (click the link):
+
 ### Mach Number
 [![Rocket Nozzle Mach Number Contours](https://img.youtube.com/vi/rJ3ukMYXq6c/hqdefault.jpg)](https://www.youtube.com/watch?v=rJ3ukMYXq6c "Play on YouTube")
 
