@@ -1,4 +1,4 @@
-## Transient Rocket Nozzle vs. Steady-State
+## Transient Rocket Nozzle
 
 **The transient run plateaus around **1.1 MN** which matches the steady-state solution.
 
