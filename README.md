@@ -52,7 +52,7 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 **Thrust was computed at the exit plane:** area-weighted Mdot, Velocity, and Pressure; subtract P_infinity.
 **Domain & outlet:** Ensure far-field is large and non-reflecting.
 
-**Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average should rise toward the steady ≈1.1 MN.
+**Expectation:** Once the ramp completes and the exit plane stabilizes, the transient time-average will rise toward the steady ≈1.1 MN.
 
 ### Videos Below (click the link):
 
