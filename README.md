@@ -57,7 +57,7 @@ Key settings: Δt = 1e−6 s, total simulated time = 0.025 s, implicit transient
 ### Videos Below (click the link):
 
 ### Mach Number
-[![Rocket Nozzle Mach Number Contours](https://img.youtube.com/vi/rJ3ukMYXq6c/hqdefault.jpg)](https://www.youtube.com/watch?v=rJ3ukMYXq6c "Play on YouTube")
+[![Rocket Nozzle Mach Number Contours](https://img.youtube.com/vi/rJ3ukMYXq6c/hqdefault.jpg)](https://www.youtube.com/watch?v=uqyE58cscIE "Play on YouTube")
 
 ### Species (Air)
 [![Rocket Nozzle Species (Air) Contours](https://img.youtube.com/vi/FEAcBxugaVg/hqdefault.jpg)](https://www.youtube.com/watch?v=FEAcBxugaVg "Play on YouTube")
